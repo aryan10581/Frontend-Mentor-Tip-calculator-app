@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="cont">
+        <div id="head">
+            <img src="images/logo.svg" alt="">
+
+        </div>
+        <div id="main">
+            <div id="left">
+
+                <div id="bill">
+                    <p>Bill</p>
+
+
+                    <input type="number" placeholder="0" name="" id="bill_inp" onchange="" />
+                </div>
+
+                <div id="tip_per">
+                    <p>Select Tip %</p>
+                    <div id="tip_per_btn">
+                        <div id="top">
+
+                            <button id="for_fv" class="tp">5%</button>
+                            <button id="tn" class="tp">10%</button>
+                            <button id="ft" class="tp">15%</button>
+                        </div>
+                        <div id="bottom">
+
+                            <button id="twf" class="tp">25%</button>
+                            <button id="fifty" class="tp">50%</button>
+                            <button onclick="enable_val()" id="cus">Custom</button>
+                            <input type="number" id="custom">
+                        </div>
+                    </div>
+
+                </div>
+                <div id="people">
+                    <p>Number of People</p>
+
+                    <input type="number" name="" placeholder="0" id="inp_people">
+
+                </div>
+            </div>
+            <div id="right">
+                <div id="tip_amt">
+                    <div id="tip_amt_p">
+                        <p id="tip_amt_am">Tip Amount</p>
+                        <p id="comment">
+                            / person
+                        </p>
+
+                    </div>
+                    <p id="tip_amt_fn">$0.00</p>
+                </div>
+                <div id="total_amt">
+                    <div id="total_amt_p">
+                        <p id="total_amt_am">Total Amount</p>
+                        <p id="comment_total">
+                            / person
+                        </p>
+
+                    </div>
+                    <p id="bill_amt_fn">$0.00</p>
+                </div>
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

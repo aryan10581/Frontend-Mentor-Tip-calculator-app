@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+* {
+    font-family: 'Space Mono', monospace;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-content: center;
+}
+
+#cont {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-content: center;
+    background-color: hsl(185, 41%, 84%);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#reset {
+    margin-bottom: 4vh;
+}
+
+#main {
+    background-color: white;
+    width: 53vw;
+    display: flex;
+}
+
+#left {
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    padding-top: 2.5vh;
+}
+
+#right {
+    background-color: hsl(183, 100%, 15%);
+}
+
+.tp {
+    background-color: hsl(183, 100%, 15%);
+}
+
+#bill {
+    text-align: left;
+}
+
+#bill>input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    color: hsl(184, 14%, 56%);
+    text-align: right;
+    text-decoration: none;
+    padding-right: 1vh;
+    padding-top: .25vh;
+    width: 20vw;
+    font-size: 1.5vw;
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: 1vw;
+    background-position-x: 1vw;
+    background-position-y: 1vw;
+    padding-bottom: .25vh;
+    border-radius: .75vh;
+}
+
+#bill>p {
+    color: hsl(186, 14%, 43%);
+}
+
+#tip_per {
+    display: grid;
+    margin-top: 4vh;
+    text-align: left;
+}
+
+#tip_per>p {
+    color: hsl(186, 14%, 43%);
+    font-size: .95vw;
+}
+
+#main {
+    border-radius: 1.75vh;
+}
+
+#top,
+#bottom {
+    display: flex;
+}
+
+#top>button,
+#bottom>button {
+    width: 6.35vw;
+    border: none;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    padding: 1vh;
+    border-radius: .5vh;
+}
+
+#cus {
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+
+#people {
+    text-align: left;
+    margin-top: 3vh;
+}
+
+#people>p {
+    color: hsl(186, 14%, 43%);
+    font-size: .95vw;
+}
+
+#inp_people {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    color: hsl(184, 14%, 56%);
+    text-align: right;
+    text-decoration: none;
+    padding-right: 1vh;
+    padding-top: .25vh;
+    width: 20vw;
+    font-size: 1.5vw;
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-size: 1vw;
+    background-position-x: 1vh;
+    border-radius: .75vh;
+    background-position-y: 1vh;
+    padding-bottom: .25vh;
+    margin-bottom: 5vh;
+}
+
+#right {
+    padding-right: 2.5vw;
+    padding-left: 2.5vw;
+    border-radius: 1.5vh;
+    padding-top: 2.5vh;
+    width: 20vw;
+    text-align: left;
+    margin: 2.5vh;
+}
+
+#tip_amt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tip_amt_am {
+    font-size: 1vw;
+}
+
+#comment {
+    font-size: .85vw;
+    color: hsl(184, 14%, 56%);
+}
+
+#tip_amt>p {
+    font-size: 2.5vw;
+    color: hsl(172, 67%, 45%);
+}
+
+#total_amt {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+#total_amt_am {
+    font-size: 1vw;
+}
+
+#comment_total {
+    font-size: .85vw;
+    color: hsl(184, 14%, 56%);
+}
+
+#total_amt>p {
+    font-size: 2.5vw;
+    color: hsl(172, 67%, 45%);
+}
+
+#reset {
+    width: 20vw;
+    color: hsl(186, 14%, 43%);
+    background-color: hsl(172, 67%, 45%);
+    border: none;
+    padding: 1vh;
+    margin-top: 12vh;
+    border-radius: 1vh;
+}
+
+
+/* Active States */
+
+input:focus {
+    outline: 3px solid hsl(172, 67%, 45%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#custom {
+    width: 5.25vw;
+    border: .1vh solid cyan;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    padding: 1vh;
+    border-radius: .5vh;
+    color: green;
+    text-align: right;
+    display: none;
+}
+
+.tp:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+@media screen and (min-width:320px) {
+    #head>img {
+        width: 15vw;
+    }
+    #main {
+        flex-direction: column;
+        width: 95vw;
+        align-items: center;
+    }
+    #left {
+        display: grid;
+        place-content: center;
+        width: 90vw;
+    }
+    #people {
+        display: grid;
+        place-content: center;
+    }
+    #inp_people {
+        width: 80vw;
+        font-size: 2.5vw;
+    }
+    #right {
+        display: grid;
+        place-content: center;
+        width: 85vw;
+    }
+    #left>div {
+        width: 90vw;
+    }
+    #right>div {
+        width: 85vw;
+    }
+    #bill>p {
+        font-size: 2vh;
+    }
+    #bill>input {
+        width: 80vw;
+        font-size: 2.5vh;
+        margin-top: 2vh;
+    }
+    #bill {
+        display: grid;
+        place-content: center;
+    }
+    #tip_per>p {
+        width: 80vw;
+        font-size: 2vh;
+    }
+    #tip_per {
+        display: grid;
+        place-content: center;
+    }
+    #top>button,
+    #bottom>button {
+        width: 26.35vw;
+    }
+    #custom {
+        width: 21.35vw;
+    }
+    #bill>input {
+        background-position: 1vw 1vw;
+        background-size: 2vw;
+    }
+    #inp_people {
+        background-position: 1vw 1vw;
+        background-size: 2vw;
+    }
+    #people>p {
+        font-size: 3vw;
+        margin-left: 2.5vw;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #main {
+        flex-direction: row;
+        width: 54vw;
+    }
+    #left {
+        display: block;
+        width: 20vw;
+    }
+    #left>div {
+        width: 20vw;
+    }
+    #right>div {
+        width: 20vw;
+    }
+    #bill>input {
+        width: 20vw;
+        font-size: 1.5vw;
+        margin-top: 1vh;
+    }
+    #tip_per>p {
+        width: 20vw;
+        font-size: 2vh;
+    }
+    #top>button,
+    #bottom>button {
+        width: 6.35vw;
+    }
+    #custom {
+        width: 5.25vw;
+    }
+    #bill>input {
+        background-position: 1vw 1vw;
+        background-size: 1vw;
+    }
+    #inp_people {
+        background-position: 1vw 1vw;
+        width: 20vw;
+        font-size: 1.5vw;
+        background-size: 1vw;
+    }
+    #people>p {
+        font-size: 1vw;
+        margin-left: 0;
+    }
+}
